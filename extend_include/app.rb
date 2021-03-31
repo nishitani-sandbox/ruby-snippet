@@ -2,7 +2,15 @@ module Foo
   def a
     "aaa: i am #{name}"
   end
+
+  class << self
+    def b
+      "bbb"
+    end
+  end
 end
+
+p Foo.b
 
 module Bar
   extend Foo
