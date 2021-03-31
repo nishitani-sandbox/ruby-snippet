@@ -1,4 +1,6 @@
 module Foo
+  FOO = "foo"
+
   def a
     "aaa: i am #{name}"
   end
@@ -40,3 +42,4 @@ end
 
 h = Hoge.new("hoge")
 p h.a
+p Hoge::FOO
